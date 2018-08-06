@@ -1,7 +1,9 @@
 # vs-2017-ftp-upload
-Uploads FTP files directly from Visual Studio
+#Uploads FTP files directly from Visual Studio 2017
 
-This lets you upload files directly from Visual Studio Code Editor Window - right click on the file in the Solution Explorer and the FTP command should be there
+*Adds an FTP Command menu item to VS 2017 Solution Explorer that lets you FTP individual files to a Web Server*
+
+You can modify the code to do anything really.
 
 1. Install NcFTP ftp://ftp.ncftp.com/ncftp/binaries/Setup%20NcFTP%203.2.6.msi (or find binary here - https://www.ncftp.com/download/ )
 1. Download this and run in VS 2017 or get the VISX package in the root that might work.
