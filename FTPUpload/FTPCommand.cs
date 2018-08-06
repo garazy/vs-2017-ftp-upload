@@ -87,7 +87,20 @@ namespace FTPUpload
             Task<object> t = serviceProvider.GetServiceAsync ( typeof ( EnvDTE.DTE ) );
             t.Wait ( );
             EnvDTE80.DTE2 applicationObject = t.Result as EnvDTE80.DTE2;
-            return applicationObject.ActiveDocument.FullName;
+
+
+            foreach ( EnvDTE.SelectedItem selectedItem in applicationObject.SelectedItems )
+            {
+                if ( selectedItem.ProjectItem == null ) return null;
+                var projectItem = selectedItem.ProjectItem;
+                var fullPathProperty = projectItem.Properties.Item ( "FullPath" );
+                if ( fullPathProperty == null ) return null;
+                var fullPath = fullPathProperty.Value.ToString ( );
+                return fullPath;
+            }
+
+            return null;
+
         }
 
         /// <summary>
@@ -102,6 +115,8 @@ namespace FTPUpload
             ThreadHelper.ThrowIfNotOnUIThread ( );
 
             string file = GetActiveFilePath ( ServiceProvider );
+
+
 
             System.IO.FileInfo fi = new System.IO.FileInfo ( file );
 

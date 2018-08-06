@@ -37,8 +37,10 @@
          must be a menu. -->
     <Groups>
       <Group guid="guidFTPCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE"/>
       </Group>
+
+
     </Groups>
 
     <!--Buttons section. -->
@@ -59,6 +61,9 @@
           <ButtonText>Invoke FTPCommand</ButtonText>
         </Strings>
       </Button>
+
+
+      
     </Buttons>
 
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
@@ -75,6 +80,8 @@
   <Symbols>
     <!-- This is the package guid. -->
     <GuidSymbol name="guidFTPCommandPackage" value="{cfe3f10f-3177-4e39-a181-a5fbcd761b0f}" />
+
+
 
     <!-- This is the guid used to group the menu commands together -->
     <GuidSymbol name="guidFTPCommandPackageCmdSet" value="{f8b84d2b-0232-49d5-9c5e-161b8129afe7}">
