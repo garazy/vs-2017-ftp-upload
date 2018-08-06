@@ -25,4 +25,4 @@ and you edit c:\dev\myproject\js\main.js in Visual Studio it will upload to /www
 
 
 
-If you are still not sure read the code here, it's very simple - https://github.com/garazy/vs-2017-ftp-upload/blob/82dddb54e36c911e30bffbcd746477657389966f/FTPUpload/FTPCommand.cs#L113
+If you are still not sure read the code here, this is the meat of the implementation - https://github.com/garazy/vs-2017-ftp-upload/blob/82dddb54e36c911e30bffbcd746477657389966f/FTPUpload/FTPCommand.cs#L113
