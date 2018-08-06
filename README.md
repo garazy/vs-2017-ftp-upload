@@ -1,5 +1,5 @@
 # vs-2017-ftp-upload
-# Uploads FTP files directly from Visual Studio 2017
+## Uploads FTP files directly from Visual Studio 2017
 
 *Adds an FTP Command menu item to VS 2017 Solution Explorer that lets you FTP individual files to a Web Server*
 
