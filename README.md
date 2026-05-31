@@ -1,3 +1,7 @@
+# Deprecated
+
+This extension is deprecated. Use `super_vs` instead: https://github.com/garazy/super_vs
+
 # vs-2017-ftp-upload
 ## Uploads FTP files directly from Visual Studio 2017
 
